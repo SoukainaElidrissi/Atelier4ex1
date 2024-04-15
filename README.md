@@ -46,9 +46,7 @@ VAEs, a variant of autoencoders, incorporate a probabilistic layer to introduce 
 ### Loss and KL Divergence:
 We visualize training and validation losses for both AE and VAE. Additionally, we plot the KL divergence for the VAE.
 
-### Dataset:
 
-- MNIST Dataset: [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
 
 ## Insights and Conclusions:
