@@ -1,5 +1,26 @@
-# Autoencoder vs Variational Autoencoder on MNIST Dataset
+# PyTorch Lab: Autoencoder and Variational Autoencoder (VAE) with MNIST Dataset
 
+
+
+## Work Done:
+
+###  Autoencoder (AE) VS Variational Autoencoder (VAE)
+
+1. **Autoencoder (AE)**
+   - Establish an autoencoder architecture and train the model on the MNIST dataset.
+   - Specify the best hyperparameters for training.
+
+2. **Variational Autoencoder (VAE)**
+   - Establish a variational autoencoder architecture and train the model on the MNIST dataset.
+   - Specify the best hyperparameters for training.
+
+3. **Evaluation:**
+   - Evaluate both models by plotting loss, KL divergence, and other relevant metrics.
+   - Draw conclusions based on the evaluation results.
+
+4. **Latent Space Visualization:**
+   - Plot the latent space representations of both AE and VAE models.
+### Analysis
 In this experiment, we explore the implementation and performance of Autoencoders (AE) and Variational Autoencoders (VAE) on the MNIST dataset, a collection of grayscale images depicting handwritten digits. The dataset is accessible on Kaggle at [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset).
 
 ## Autoencoder (AE)
@@ -25,18 +46,19 @@ VAEs, a variant of autoencoders, incorporate a probabilistic layer to introduce 
 ### Loss and KL Divergence:
 We visualize training and validation losses for both AE and VAE. Additionally, we plot the KL divergence for the VAE.
 
-## Conclusion:
+### Dataset:
 
-Our analysis focuses on the convergence of the models. The VAE loss encompasses a reconstruction term and a KL divergence term, illustrating the delicate balance between preserving information and introducing variability.
+- MNIST Dataset: [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
-## Latent Space Visualization:
 
-We create plots representing the latent space representations of both AE and VAE. Each point in the plot corresponds to a digit in the dataset.
+## Insights and Conclusions:
 
-### Conclusion:
+- **Performance Evaluation:** 
+  - Both AE and VAE models demonstrated promising results in reconstructing MNIST digits, with VAE showcasing improved variability in generated samples.
+  
+- **Latent Space Analysis:** 
+  - Latent space visualization revealed distinct differences between AE and VAE, with VAE exhibiting a smoother distribution, indicating its probabilistic nature.
 
-Our examination centers on the distribution of points in the latent space. The VAE's latent space is anticipated to display a smoother distribution due to its probabilistic nature.
 
-## Overall Conclusion:
 
 Through a meticulous comparison of performance metrics and the visualization of the latent space, we draw conclusions regarding the efficacy of AE and VAE on the MNIST dataset. While AE excels at capturing essential features, VAE introduces a probabilistic element, yielding a more structured and continuous latent space representation. The choice between AE and VAE is contingent on specific application requirements, with VAE offering distinct advantages in generating diverse and realistic data.
